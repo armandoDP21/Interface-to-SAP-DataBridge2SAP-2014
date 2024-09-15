@@ -1,0 +1,118 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Data\CuentasPorCobrar.Designer.vb" />
+    <None Remove="Data\CuentasPorCobrar.vb" />
+    <None Remove="Data\ImpuestosProductoData.vb" />
+    <None Remove="Data\MovimientosDeProductosData.vb" />
+    <None Remove="Data\ODS_MOVIMIENTOPRODUCTO_SEGREGADO.Designer.vb" />
+    <None Remove="Data\ODS_MOVIMIENTOPRODUCTO_SEGREGADO.vb" />
+    <None Remove="Data\OSDMaestroData.vb" />
+    <None Remove="Data\ProcesadasData.Designer.vb" />
+    <None Remove="Data\ProcesadasData.vb" />
+    <None Remove="Data\SAP_GLINTERFASEData.vb" />
+    <None Remove="Data\VS_CATALOGOPOLIZASData.vb" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Admin\" />
+    <Folder Include="Costos\" />
+    <Folder Include="isapmenu\" />
+    <Folder Include="Menu\" />
+    <Folder Include="Seguridad\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Data\CuentasPorCobrar.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CuentasPorCobrar.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="Data\ODS_MOVIMIENTOPRODUCTO_SEGREGADO.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ODS_MOVIMIENTOPRODUCTO_SEGREGADO.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="Data\ProcesadasData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ProcesadasData.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Costos\CostosMasterData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+    <None Update="Costos\EmbarquesData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+    <None Update="Costos\GastosData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+    <None Update="Costos\InterfaseCostos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+    <None Update="Costos\InterfaseCostosData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+    <None Update="Data\BitacoraData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+    <None Update="Data\CuentasPorCobrar.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CuentasPorCobrar.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Data\ImpuestosProductoData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+    <None Update="Data\LiquidacionesData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+    <None Update="Data\MovimientosDeProductosData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+    <None Update="Data\ODS_MOVIMIENTOPRODUCTO_SEGREGADO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ODS_MOVIMIENTOPRODUCTO_SEGREGADO.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Data\OSDMaestroData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+    <None Update="Data\ProcesadasData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProcesadasData.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Data\SAP_GLINTERFASEData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+    <None Update="Data\UsuariosData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+    <None Update="Data\VS_CATALOGOPOLIZASData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+    <None Update="isapmenu\CalendarioData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+    <None Update="isapmenu\GTPolizasCostosData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+    <None Update="isapmenu\GTPolizasIngresosData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+    <None Update="isapmenu\RunIsapData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+    <None Update="Menu\MenuData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+  </ItemGroup>
+
+</Project>
